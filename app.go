@@ -16,6 +16,7 @@ func main() {
 	r := chi.NewRouter()
 
 	r.Get("/welcome", handler.Welcome)
+	r.Get("/timer", handler.Timer)
 
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/plain")
