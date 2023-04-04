@@ -7,5 +7,6 @@ jobs:
   my_job:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "Inside action file"
       - name: Run Code Coverage
         uses: workflows/test-cc.yml
